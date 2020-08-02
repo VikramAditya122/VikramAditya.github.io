@@ -1,0 +1,229 @@
+*,html,body{
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    background: linear-gradient(to right,darkblue,deepskyblue);
+    height: 112px;
+    line-height: 112px;
+}
+
+/*.nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 40px;
+}*/
+
+header nav{
+    float: right;    
+}
+
+nav ul{
+    list-style: none;
+}
+
+.row nav ul li{
+    display: inline-block;
+}
+
+.row nav ul li a{
+    padding-right: 30px;
+    font-size: large;
+    font: outline;
+    font-family: monospace;
+    color: white;
+    transition: all 0.22s ease-in-out;
+    text-decoration: none;
+}
+
+.row .home{
+    text-decoration: none;
+    font-family: monospace;
+    color: white;
+    font-size: xx-large;
+    margin: 17px;
+    margin-left: 25px;
+    font-weight: bolder;
+    transition: all 0.22s ease-in-out;
+}
+
+.row nav ul li a:hover{
+    text-decoration: none;
+    color: rgb(247, 43, 77);
+}
+
+.row a:hover{
+    text-decoration: none;
+    color: rgb(247, 43, 77);
+    transition: 0.22s ease-in;
+}
+
+/*-----------------Slider---------------------*/
+
+.slider .slides{
+    margin: 0;
+    padding: 0;
+    font-family: monospace;
+    height: 10px;
+    width: 30%;
+    overflow: hidden;
+    background-position: center;
+}
+
+.slides{
+    position: relative;
+}
+
+.slide img{
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 1349px;
+    height: 500px;
+    display: flex;
+    flex-direction: row;
+}
+
+/*.slide{
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100px;
+    width: 160px;
+    display: flex;
+    flex-direction: row;    
+}*/
+
+.slider{
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 1349px;
+    height: 500px;
+    display: flex;
+    flex-direction: row;
+    overflow-x: hidden;
+}
+
+.arrow{
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: 0px;
+    height: 0px;
+    border-style: solid;
+    border-width: 35px 35px;
+}
+
+#arrow-left{
+    border-width: 30px 40px 30px 0px;
+    left: 0px;
+    margin-left: 30px;
+    border-color: transparent purple transparent transparent;
+}
+
+#arrow-right{
+    border-width: 30x 0px 30px 40px;
+    right: 0px;
+    margin-right: 30px;
+    border-color: transparent transparent transparent purple;
+}
+
+/*----------------------Content-----------------------*/
+
+.container{
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.portfolio{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.portfolioItem{
+    position: relative;
+}
+
+.background-img{
+    height: 300px;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+
+.img-wrapper{
+    position: absolute;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    /*margin-top: 50px;*/
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    text-align: center;
+    padding-left: 200px;
+    padding-right: 180px;
+    cursor: pointer;
+}
+
+/*.logo-wrapper img{
+    width: 50%;
+    margin-bottom: 70px;
+    margin-left: 70px;
+}*/
+
+.img-wrapper:hover .subtitle{
+    font-weight: 600;
+    color: lightseagreen;
+    font-family: serif;
+}
+
+.img-wrapper .subtitle p{
+    margin-top: 17px;
+}
+
+.img-wrapper .subtitle{
+    transition: 0.8s;
+    color: transparent;
+    font-weight: 600;
+}
+
+.img-darken{
+    transition: 1s;
+    filter: brightness(20%);
+}
+
+.img-wrapper:hover .subtitle .stars{
+    color: yellow;
+    opacity: 1;
+    margin-top: 20px;
+}
+
+.subtitle .stars{
+    color: yellow;
+    opacity: 0;
+    transition: 1s;
+    margin-top: 20px;
+}
+
+.button a{
+    text-decoration: none;
+    width: 80px;
+    padding-right: 220px;
+    display: inline-block;
+    text-align: center;
+    padding: 7px 5px;
+    border: 1px solid white;
+    color: white;
+    margin-top: 10px;
+    transition: 1s;
+    background: darkorange;
+}
+
+.button a:hover{
+    border: 3px solid white;
+    background: darkorange;
+    font-weight: bolder;
+}
